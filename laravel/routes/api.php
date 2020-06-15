@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group([ 'prefix' => 'arquivo'], function () {
 	Route::get('listar',       'ArquivoController@listar');
+	Route::get('{id}/listar',  'ArquivoController@listar');
 	Route::get('criar',        'ArquivoController@criar');
 	Route::get('{id}/editar',  'ArquivoController@editar');
 	Route::get('{id}/remover', 'ArquivoController@remover');
@@ -26,12 +27,14 @@ Route::group([ 'prefix' => 'arquivo'], function () {
 Route::group([ 'prefix' => 'assunto'], function () {
 	Route::get('listar',       'AssuntoController@listar');
 	Route::get('criar',        'AssuntoController@criar');
+	Route::post('salvar',      'AssuntoController@salvar');
 	Route::get('{id}/editar',  'AssuntoController@editar');
 	Route::get('{id}/remover', 'AssuntoController@remover');
 });
 Route::group([ 'prefix' => 'processo'], function () {
 	Route::get('listar',       'ProcessoController@listar');
 	Route::get('criar',        'ProcessoController@criar');
+	Route::post('salvar',      'ProcessoController@salvar');
 	Route::get('{id}/editar',  'ProcessoController@editar');
 	Route::get('{id}/remover', 'ProcessoController@remover');
 });
@@ -44,6 +47,7 @@ Route::group([ 'prefix' => 'tramite'], function () {
 Route::group([ 'prefix' => 'unidade'], function () {
 	Route::get('listar',       'UnidadeController@listar');
 	Route::get('criar',        'UnidadeController@criar');
+	Route::post('salvar',      'UnidadeController@salvar');
 	Route::get('{id}/editar',  'UnidadeController@editar');
 	Route::get('{id}/remover', 'UnidadeController@remover');
 });

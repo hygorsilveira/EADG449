@@ -6,10 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AdicionaAssuntoTabelaProcessos' => $baseDir . '/database/migrations/2020_04_16_081759_adiciona_assunto_tabela_processos.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
-    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
+    'CorrigeAssuntoDeleteTabelaProcessos' => $baseDir . '/database/migrations/2020_06_13_213328_corrige_assunto_delete_tabela_processos.php',
+    'CorrigeTramiteOnDeleteTabelaTramites' => $baseDir . '/database/migrations/2020_06_14_055847_corrige_tramite_on_delete_tabela_tramites.php',
+    'CriarTabelaArquivos' => $baseDir . '/database/migrations/2020_04_16_072926_criar_tabela_arquivos.php',
+    'CriarTabelaAssuntos' => $baseDir . '/database/migrations/2020_04_14_093312_criar_tabela_assuntos.php',
+    'CriarTabelaProcessos' => $baseDir . '/database/migrations/2020_04_13_075929_criar_tabela_processos.php',
+    'CriarTabelaTramites' => $baseDir . '/database/migrations/2020_04_14_102643_criar_tabela_tramites.php',
+    'CriarTabelaUnidades' => $baseDir . '/database/migrations/2020_04_14_093242_criar_tabela_unidades.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'DivisionByZeroError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
     'Error' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/Error.php',
@@ -467,6 +473,7 @@ return array(
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'ParseError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
+    'RemoveNumeroDataTabelaProcessos' => $baseDir . '/database/migrations/2020_06_07_111846_remove_numero_data_tabela_processos.php',
     'SebastianBergmann\\CodeCoverage\\CodeCoverage' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage.php',
     'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => $vendorDir . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
     'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => $vendorDir . '/phpunit/php-code-coverage/src/Driver/Driver.php',
